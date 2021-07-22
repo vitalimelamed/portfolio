@@ -13,11 +13,9 @@ const navbarLink = document.querySelectorAll('.navbar-brand, .navbar-link');
       navbarList.classList.remove('navbar-show');
   });
 });
-const input = document.querySelectorAll('input');
-const textarea = document.querySelector('textarea');
-const button = document.querySelector('button[type='submit']');
+const input = document.querySelectorAll('.form-input');
+const button = document.querySelector('.form-button']');
  
 button.addEventListener('click', () => {
-    input.for(input =>  input.value = '');
-    textarea.for(textarea =>  textarea.value = '');
+    input.forEach(input =>  input.value = '');
 });
