@@ -13,9 +13,8 @@ const navbarLink = document.querySelectorAll('.navbar-brand, .navbar-link');
       navbarList.classList.remove('navbar-show');
   });
 });
-const input = document.querySelectorAll('.form-input');
-const button = document.querySelector('.form-button']');
- 
-button.addEventListener('click', () => {
-    input.forEach(input =>  input.value = '');
-});
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
