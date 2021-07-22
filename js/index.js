@@ -13,8 +13,11 @@ const navbarLink = document.querySelectorAll('.navbar-brand, .navbar-link');
       navbarList.classList.remove('navbar-show');
   });
 });
-    window.onbeforeunload = () => {
-  for(const form of document.getElementById('form')) {
-    form.reset();
-  }
-}
+const input = document.querySelectorAll('input');
+const textarea = document.querySelector('textarea');
+const button = document.querySelector('button[type='submit']');
+ 
+button.addEventListener('click', () => {
+    input.for(input =>  input.value = '');
+    textarea.for(textarea =>  textarea.value = '');
+});
