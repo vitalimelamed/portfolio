@@ -14,7 +14,7 @@ const navbarLink = document.querySelectorAll('.navbar-brand, .navbar-link');
   });
 });
     window.onbeforeunload = () => {
-  for(const form of document.getElementById('contact-form')) {
+  for(const form of document.getElementById('#contact-form')) {
     form.reset();
   }
 }
