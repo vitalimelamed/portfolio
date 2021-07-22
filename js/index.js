@@ -13,3 +13,8 @@ const navbarLink = document.querySelectorAll('.navbar-brand, .navbar-link');
       navbarList.classList.remove('navbar-show');
   });
 });
+    window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
