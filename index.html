@@ -203,21 +203,21 @@
       <div class="form-wrapper">
         <!-- form -->
         <div class="form">
-        <form class="kwes-form" action="https://kwes.io/api/foreign/forms/5QCcZaVEnauVitWHSJIv">
+        <form action="https://formspree.io/f/xgerlqeg" method="post">
             <!-- form group name -->
             <div class="form-group">
               <label class="form-label" for="name">Name</label>
-                <input data-kw-rules="required|min:5|max:20" class="form-input" type="text" name="name" id="name" aria-label="name">
+                <input class="form-input" type="text" name="name" id="name" aria-label="name" required="">
               </div>
             <!-- form group email -->
             <div class="form-group">
                 <label class="form-label" for="email">Email</label>
-                <input data-kw-rules="required|email" class="form-input" type="email" name="email" id="email" aria-label="email">
+                <input class="form-input" type="email" name="email" id="email" aria-label="email" required="">
               </div>
             <!-- form group message -->
             <div class="form-group">
               <label class="form-label" for="message">Message</label>
-              <textarea data-kw-rules="required|min:20|max:255" class="form-input form-textarea" name="message" id="message" aria-label="message" rows="7"></textarea>
+              <textarea class="form-input form-textarea" name="message" id="message" aria-label="message" rows="7" required=""></textarea>
             </div>
             <!-- form button submit -->
           <button class="form-btn" type="submit">Send message</button>
@@ -286,7 +286,6 @@
       </p>
     </footer>
     <!-- / footer -->
-    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
     <script src="js/index.js"></script>
   </body>
 </html>
